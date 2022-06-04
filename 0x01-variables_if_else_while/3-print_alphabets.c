@@ -8,7 +8,7 @@ int main(void)
 {
 	char small_alpha = 'a';
 	char big_alpha = 'A';
-	
+
 	while (small_alpha <= 'z')
 	{
 		putchar(small_alpha);
