@@ -7,23 +7,23 @@
  */
 int main(void)
 {
-	int firstNum = '0';
-	int secondNum = '1';
+	int firstNum;
+	int secondNum;
 
-	while (secondNum <= '9')
+	for (secondNum = '0'; secondNum <= '9'; secondNum++)
 	{
 		for (firstNum = (secondNum + 1); firstNum <= '9'; firstNum++)
 		{
-			putchar(firstNum);
 			putchar(secondNum);
+			putchar(firstNum);
 
-			if (secondNum != '8' || firstNum != '9')
+			if (secondNum != '8' || firstNum != '9')/*insert comma & space*/
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		secondNum++;
+
 	}
 	putchar('\n');
 
