@@ -7,7 +7,10 @@
 
 int main(void)
 {
-	int tenz, onez, tz, oz;
+	int tenz;
+	int onez;
+	int tz;
+	int oz;
 
 	for (tenz = '0'; tenz <= '9'; tenz++)
 	{
