@@ -3,7 +3,6 @@
 /**
  * print_alphabet_x10 - print lowercase ten times
  *
- *
  * Return 0
  */
 
