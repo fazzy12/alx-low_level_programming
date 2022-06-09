@@ -1,27 +1,29 @@
 #include <stdio.h>
 
 /**
- *main - print first 50 Fibonacci numbers
- * Return: 0
+ * main - prints the sum of eleve valued fibo sequense
+ * term not exceeding 40000000
+ *
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int count;
-	int count_to = 50;
-	long a = 1;
-	long b = 2;
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-	for (count = 1; count <= (count_to / 2); count++)
+	while (1)
 	{
-		printf("%li %li", a, b);
-		a += b;
-		b += a;
-	}
-	if (count_to % 2 == 1)
-		printf("%li", a);
+		fibsum = fib1 + fib2;
+		if (fibsum > 4000000)
+			break;
 
-	printf("\n");
+		if ((fibsum % 2) == 0)
+			tot_sum += fibsum;
+
+		fib1 = fib2;
+		fib2 = fibsum;
+	}
+	printf("%.0f\n", tot_sum);
 
 	return (0);
 }
