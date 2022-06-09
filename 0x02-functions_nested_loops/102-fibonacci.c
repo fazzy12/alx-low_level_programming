@@ -8,20 +8,24 @@
 int main(void)
 {
 	int count;
-	int count_to = 50;
-	long a = 1;
-	long b = 2;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (count = 1; count <= (count_to / 2); count++)
+	for (count = 0; count < 50; count++)
 	{
-		printf("%li %li ", a, b);
-		a += b;
-		b += a;
-	}
-	if (count_to % 2 == 1)
-		printf("%li", a);
+		sum = fib1 + fib2;
+		printf("%lu", sum);
 
-	printf("\n");
+
+		fib1 = fib2;
+		fib2 = sum;
+
+
+		if (count == 49)
+			printf("\n");
+
+		else
+			printf(", ");
+	}
 
 	return (0);
 }
