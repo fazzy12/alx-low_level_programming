@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 /**
- *  main - print largest prime factor of 612852475143
- *  Return: 0 on success
+ * main - print largest prime factor of 612852475143
+ * Return: 0 on success
  */
-
 int main(void)
 {
-	unsigned long num = 6128524751143;
-	unsigned long divider = 2;
+	unsigned long num = 612852475143;
+	unsigned long divisor = 2;
 
-	while (divider < num)
+	while (divisor < num)
 	{
-		if (num % divider == 0)
+		if (num % divisor == 0)
 		{
-			num /= divider;
-			divider = 2;
+			num /= divisor;
+			divisor = 2;
 		}
 		else
-			divider++;
+			divisor++;
 	}
+
 	printf("%lu\n", num);
 
 	return (0);
