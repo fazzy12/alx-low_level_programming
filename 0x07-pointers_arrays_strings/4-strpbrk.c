@@ -13,6 +13,7 @@ char *_strpbrk(char *s, char *accept)
 	while (*s)
 	{
 		int ind = 0;
+
 		while (accept[ind])
 		{
 			if (*s == accept[ind])
