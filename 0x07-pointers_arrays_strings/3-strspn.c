@@ -10,10 +10,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
-	int ind = 0;
 
 	while (*s)
 	{
+		int ind = 0;
+
 		while (accept[ind])
 		{
 			if (*s == accept[ind])
