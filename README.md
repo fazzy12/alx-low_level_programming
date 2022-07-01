@@ -40,10 +40,9 @@ ___
 * 0x1D. C - Search Algorithms
 
 # AUTHOR 💪
+* [IFEANYI KALU](https://github.com/fazzy12)
 
-* [IFEANYI KALU](https://github.com/fazzy12)![GithubCatGIF](https://user-images.githubusercontent.com/29349758/176914722-a1d3e8ed-b5c5-4bc8-ad5f-1ebb253449a4.gif)
-
-# Acknowledgements
+# Acknowledgements🙏🙏🙏
 
 This project's work was conducted as part of the curriculum at Holberton School. Holberton School is a campus-based / online full-stack software engineering curriculum that uses project-based peer learning to educate students for careers in the IT industry. For further information, visit [HOLBERTON SCHOOL](https://www.holbertonschool.com/)
 
