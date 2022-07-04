@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-will work on it
-=======
 # **alx-low_level_programming**⚒️⚒️
 
 
@@ -48,7 +45,4 @@ ___
 
 # Acknowledgements🙏🙏🙏
 
-This project's work was conducted as part of the curriculum at Holberton School. Holberton School is a campus-based / online full-stack software engineering curriculum that uses project-based peer learning to educate students for careers in the IT industry. For further information, visit [HOLBERTON SCHOOL](https://www.holbertonschool.com/)
-
-
->>>>>>> 1a0dd8de2056957fdde95332216588e4fc84606c
+This project's work was conducted as part of the curriculum at Holberton School. Holberton School is a campus-based / online full-stack software engineering curriculum that uses project-based peer learning to educate students for careers in the IT industry. For further information, visit [HOLBERTON SCHOOL](https://www.holbertonschool.com)
