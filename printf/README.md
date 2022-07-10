@@ -504,8 +504,8 @@ Output:
 ```
 # Authors 👷‍♂️👷‍♂️
 
-  * ifeany kalu
-  * Felix Adeh Essienne
+  * ifeany kalu [Github](https://github.com/fazzy12)
+  * Felix Adeh Essienne [Github](https://github.com/essien1990)
   
 # Acknowledgements
 
