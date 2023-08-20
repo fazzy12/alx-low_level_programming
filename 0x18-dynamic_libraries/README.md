@@ -1,51 +1,62 @@
-# C - Dynamic libraries
+# Dynamic Libraries Project
 
-In this project, learned about using dynamic libraries in C, including how to create
-them and how to use them with `$LD_LIBRARY_PATH`, `nm`, `ldd`, and `ldconfig`.
+## Overview
+Welcome to the SE Foundations curriculum's Dynamic Libraries project. In this project, you'll dive into the world of dynamic libraries in C programming. You'll learn how to create, use, and manipulate dynamic libraries, as well as explore some advanced concepts like code injection. Let's get started!
 
-## Tests :heavy_check_mark:
+## Learning Objectives
+By completing this project, you'll achieve the following:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+- Understand the purpose and functionality of dynamic libraries.
+- Learn how to create and use dynamic libraries.
+- Explore the differences between static and shared libraries.
+- Gain practical experience with `C` standard library functions like `nm`, `ldd`, and `ldconfig`.
+- Follow secure coding practices and adhere to the `Betty` style guidelines.
+- Implement `C` functions callable from Python.
+- Utilize code injection to manipulate program outcomes.
 
-## Tasks :page_with_curl:
+## Requirements
+To successfully complete this project, ensure the following:
 
-* **0. A library is not a luxury but one of the necessities of life**
-  * [libholberton.so](./libholberton.so): C dynamic library containing all the functions
-  listed below:
-    * `int _putchar(char c);`
-    * `int _islower(int c);`
-    * `int _isalpha(int c);`
-    * `int _abs(int n);`
-    * `int _isupper(int c);`
-    * `int _isdigit(int c);`
-    * `int _strlen(char *s);`
-    * `void _puts(char *s);`
-    * `char *_strcpy(char *dest, char *src);`
-    * `int _atoi(char *s);`
-    * `char *_strcat(char *dest, char *src);`
-    * `char *_strncat(char *dest, char *src, int n);`
-    * `char *_strncpy(char *dest, char *src, int n);`
-    * `int _strcmp(char *s1, char *s2);`
-    * `char *_memset(char *s, char b, unsigned int n);`
-    * `char *_memcpy(char *dest, char *src, unsigned int n);`
-    * `char *_strchr(char *s, char c);`
-    * `unsigned int _strspn(char *s, char *accept);`
-    * `char *_strpbrk(char *s, char *accept);`
-    * `char *_strstr(char *haystack, char *needle);`
+C Tasks
+- Use editors like `vi`, `vim`, or `emacs`.
+- Compile your code with `gcc -Wall -Werror -Wextra -pedantic -std=gnu89`.
+- All files should end with a new line.
+- Create a header file named `main.h` for function prototypes.
+- Avoid global variables.
+- Limit each file to no more than 5 functions.
+- Do not use standard library functions like `printf` or `puts`.
+- Include function prototypes and `_putchar` in `main.h`.
+- Follow the `Betty` style guidelines.
 
-  * [holberton.h](./holberton.h): Header file containing the prototypes of all functions
-  included in `libholberton.so`.
+Bash Tasks
+- Use editors like `vi`, `vim`, or `emacs`.
+- Test your scripts on `Ubuntu 20.04 LTS.`
+- Ensure files end with a new line.
+- Begin each script with `#!/bin/bash`.
+- Include a `README.md` with each script explaining its purpose.
+- Make all script files `executable`.
 
-* **1. Without libraries what have we? We have no past and no future**
-  * [1-create_dynamic_lib.sh](./1-create_dynamic_lib.sh): Bash script that creates a
-  dynamic library called `liball.so` from all the `.c` files in the current directory.
+## Tasks
+`task-0`: A library is not a luxury but one of the necessities of life
+Create the dynamic library `libdynamic.so` containing specific functions.
 
-* **2. Let's call C functions from Python**
-  * [100-operations.so](./100-operations.so): C dynamic library containing basic C
-  mathematical operation functions that can be called from Python.
-  * Includes:
-    * `int add(int a, int b);`
-    * `int sub(int a, int b);`
-    * `int mul(int a, int b);`
-    * `int div(int a, int b);`
-    * `int mod(int a, int b);`
+`task-1`: Without libraries what have we? We have no past and no future
+Craft a script, `1-create_dynamic_lib.sh`, that generates a dynamic library from `.c` files in the current directory.
+
+`task-2`: Let's call `C` functions from `Python`
+Construct a dynamic library featuring `C` functions accessible from `Python`.
+
+`task-3`: Code injection: Win the Giga Millions!
+Leverage code injection to manipulate the outcome of a lottery program.
+
+## Usage
+Follow the instructions provided in each task description to complete the corresponding objectives. Compile, run your code, and utilize the provided resources as needed.
+
+Resources
+To deepen your understanding of the project concepts, consult the resources provided:
+
+- [Explore the differences between Dynamic and Static libraries.](https://www.youtube.com/watch?v=eW5he5uFBNM)
+- [Learn about creating dynamic libraries on Linux.](https://google.com/)
+
+## Copyright
+This project forms part of ALX's SE Foundations curriculum. All rights reserved. The project's code, tasks, and descriptions are the property of ALX and are intended for educational purposes only. Plagiarism and unauthorized distribution are strictly prohibited and may result in program removal.
