@@ -1,10 +1,22 @@
+# Makefile for Task 3
+# Compiler and Flags
 CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Source and Object files
 SRC = main.c school.c
-OBJ = $(SRC:.c=.o) 
+OBJ = $(SRC:.c=.o)
+
+# Name of the Executable
 NAME = school
+
+# Program to Delete Files
 RM = rm -f
 
-all: $(OBJ)
+# Rules
+all: $(NAME)
+
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
@@ -16,3 +28,5 @@ oclean:
 fclean: clean oclean
 
 re: fclean all
+
+.PHONY: all clean oclean fclean re
