@@ -1,19 +1,32 @@
+# Makefile for Task 4
+# Compiler and Flags
 CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o) 
-NAME = school
-RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(OBJ)
-	$(CC) $(CLFAGS) $(OBJ) -o $(NAME)
+# Source and Object files
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+
+# Name of the Executable
+NAME = school
+
+# Program to Delete Files
+RM = rm -f
+
+# Rules
+all: $(NAME)
+
+$(NAME): $(OBJ)
+    $(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
 clean:
-	$(RM) *~ $(NAME)
+    $(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+    $(RM) $(OBJ)
 
 fclean: clean oclean
 
 re: fclean all
+
+.PHONY: all clean oclean fclean re
