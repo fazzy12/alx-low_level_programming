@@ -41,7 +41,6 @@ list_t *add_node(list_t **head, const char *str)
         return (NULL);
     }
 
-    // Calculate and store the length of the string
     new_node->len = _strlen(str);
 
 
