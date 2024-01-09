@@ -2,7 +2,6 @@
 #include <string.h>
 #include "lists.h"
 
-
 /**
  * _strlen - Computes the length of a string.
  * @str: The string to compute the length of.
@@ -30,19 +29,18 @@ list_t *add_node(list_t **head, const char *str)
 {
     list_t *new_node;
 
-
     new_node = malloc(sizeof(list_t));
     if (new_node == NULL)
         return (NULL);
 
     new_node->str = strdup(str);
-    if (new_node->str == NULL) {
+    if (new_node->str == NULL)
+    {
         free(new_node);
         return (NULL);
     }
 
     new_node->len = _strlen(str);
-
 
     new_node->next = *head;
 
